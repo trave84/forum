@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use App\Question
-// use App\Answer
+// use App\Question;
+// use App\Answer;
 
 class QuestionController extends Controller
 {
@@ -16,7 +16,7 @@ class QuestionController extends Controller
 
         // dd($questions);
 
-        $questions = \App\Question:orderBy('created_at', 'asc')
+        $questions = \App\Questions::orderBy('created_at', 'asc')
             ->get();
 
         // dd($questions);
@@ -40,7 +40,7 @@ class QuestionController extends Controller
         // db(answers);
         // $answers = \App\Answers::Answers()->get();
 
-        $question = Question
+        $question = \App\Question::find(1);
         return 'This is a detail of a question';
     }
 }

@@ -1,0 +1,29 @@
+Q/A PROJECT
+===========
+
+Use cases:
+---------
+
+* A USER COMES TO THE WEBSITE WITH THE DESIRE TO post a question. He comes to the homepage. He clickes a button "Post new question". He arrives to a page with a submission form. He fills-in the form. Clicks the submit button. Question is saved. He has posted a question.
+
+* A USER COMES TO THE WEBSITE WITH THE DESIRE TO answer some questions. He comes to the homepage and sees a list of last posted questions. He selects one and goes to it's detail page. He sees all the answers so far. He sees the form to submit answer. He fills in the form and clicks "Answer". The answer is saved. He has answered a question.
+
+
+
+Pages:
+------
+homepage
+    "Post new question" button
+    list of last posted questions
+question submission page
+    submission form
+    submit button
+detail of question
+    all the answers so far
+    form to submit answer
+    "Answer" button
+
+Entities:
+---------
+Question
+Answer
