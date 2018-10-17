@@ -12,13 +12,15 @@ class CategoryController extends Controller
         $categories = DB::table('categories')
             ->orderBy('name', 'asc')
             ->get();
+        // dd($categories); // DIE HERE
 
-        // dd($categories);
-
+        
+        // PREPARE $view=(url/file,['view_data'])     view('FILE_NAME', 'NAME'=>$QUERY_DATA)
         $view =  view('categories/index', [
             'categories' => $categories
         ]   );
-
+        
+        // RETURNS: $view_data TO the views_file.php 
         return $view;
     }
 }
