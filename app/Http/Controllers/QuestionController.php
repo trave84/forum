@@ -40,6 +40,9 @@ class QuestionController extends Controller
         // $answers = \App\Answers::Answers()->get();
 
         $question = \App\Question::find(1);
-        return 'This is a detail of a question';
+
+        $view = view('questions/index');
+
+        return $view;  
     }
 }
