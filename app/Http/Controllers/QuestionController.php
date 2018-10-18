@@ -14,13 +14,12 @@ class QuestionController extends Controller
         //     ->orderBy('created_at', 'asc')
         //     ->get();
 
-        // dd($questions);
-
-        $questions = \App\Questions::orderBy('created_at', 'asc')
+        $questions = \App\Question::orderBy('created_at', 'asc')
             ->get();
 
-        // dd($questions);
-        return 'This is the list of questions';
+        $view = view('questions/index');
+
+        return $view;  
     }
 
     public function show(){
@@ -28,7 +27,7 @@ class QuestionController extends Controller
         //     ->where('id', 1)
         //     ->first();
 
-        $question1 = \App\Questions::find(1);
+        $question1 = \App\Question::find(1);
 
         // dd($question1);
 
